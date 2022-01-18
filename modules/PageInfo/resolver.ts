@@ -2,7 +2,7 @@ import { cheerio } from 'https://deno.land/x/cheerio@1.0.4/mod.ts'
 
 type Info = string | null;
 
-class PageInfo {
+export class PageInfoResolver {
   private $;
 
   private domain: Info = null;
@@ -103,5 +103,3 @@ class PageInfo {
     return null;
   }
 }
-
-export { PageInfo };
